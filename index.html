@@ -396,6 +396,70 @@ img {
 
     
 
+    
+#parent {
+  width: 350px;
+  height: 230px;
+  border:solid 1px #000;
+}
+
+iframe {
+  width:100%;
+  height:100%;
+  border:0px;
+}
+
+
+
+
+
+
+
+#parent > button {
+  opacity: 0.3;
+  position:relative;
+  float: right;
+  right:10px;
+  bottom:35px;
+  transition: 0.5s;
+}
+#parent > button {
+  opacity: 1;
+}  
+  
+
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -566,6 +630,20 @@ chk.addEventListener('change', () => {
 
 
 
+  <div class="row">
+<div class="column">
+
+<div id="parent">
+
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/-cM8P6-aAf4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen">
+</iframe>
+
+ <button onclick="window.location.href='https://www.y2mate.com/youtube/-cM8P6-aAf4';" >DOWNLOAD</button>
+</div>
+</div>
+</div>
+
 
 
 
@@ -590,14 +668,6 @@ chk.addEventListener('change', () => {
 
 
 
-
-
-
-
-
-<footer>
-  <p style="font-family:courier;">Site by: Status reelz</p>
-</footer>
 
 
 
